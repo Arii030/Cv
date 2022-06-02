@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display¨=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1.1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .ladoIzquierdo
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.textoDePerfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.textoDePerfil .imagen
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.textoDePerfil .imagen img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textoDePerfil h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+
+
+.textoDePerfil
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.infoContacto
+{
+    padding-top: 40px;
+}
+
+.titulo
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.infoContacto ul
+{
+   position: relative; 
+}
+
+.infoContacto ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.infoContacto ul li .icon
+{
+   display: inline-block;
+   width: 30px;
+   font-size: 18px; 
+   color: #03a9fa; 
+}
+
+.infoContacto ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.infoContacto.educacion li
+{
+    margin-bottom: 15px;
+}
+
+.infoContacto.educacion h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.infoContacto.educacion h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+
+.infoContacto.educacion h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.educacion ul
+{
+    list-style: none;
+}
+
+.infoContacto.idiomas .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.infoContacto.idiomas .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.idiomas ul
+{
+    list-style: none;
+}
+
+
+.container .ladoDerecho
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.acercaDeMi
+{
+    margin-bottom: 50px; 
+}
+
+.acercaDeMi:last-child
+{
+    margin-bottom: 0;
+}
+
+.titulo2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p
+{
+    color: #333;
+}
+
+.acercaDeMi .caja
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.acercaDeMi .caja .anio_empresa
+{
+    min-width: 150px;
+}
+
+.acercaDeMi .caja .anio_empresa h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.acercaDeMi .caja .texto h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .caja
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .caja h4
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .caja .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .caja .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9fa;
+}
+
+.intereses ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.intereses ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.intereses ul li .fa
+{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .intereses ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+} 
+
+@media (max-width: 600px)
+{
+    .acercaDeMi .caja
+    {
+        flex-direction: column;
+    }
+
+    .acercaDeMi .caja .anio_empresa
+    {
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+
+    .acercaDeMi ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .skills .caja
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
